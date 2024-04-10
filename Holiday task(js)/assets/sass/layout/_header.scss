@@ -1,0 +1,56 @@
+header{
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+}
+
+.navbar{
+    height: 120px;
+    color: $primary-color;
+    @include display-flex(space-between,center);
+    .logo{
+        a{
+            font-size: 30px;
+            font-weight: 600;
+            color:$primary-color;
+        }
+    }
+}
+
+nav{
+    ul{
+        @include display-flex(center,center);
+        gap:30px;
+
+        // @include lg{
+        //     display: none;
+        // }
+        li{
+            a{
+            color: $primary-color;
+            font-size: 14px;
+            transition: .6s;
+            &:hover{
+                color:$red-color;
+            }
+            }
+        
+        }
+    }
+}
+
+.social_icons{
+    a{
+        display: flex;
+        gap:12px;
+        color: $primary-color;
+        .phone{
+            // width: 30px;
+            // height: 30px;
+            // border: 2px solid transparent;
+            border-radius: 50%;
+            text-align: center;
+        }
+    }
+    
+}
