@@ -88,6 +88,9 @@
     flex-direction: row;
     gap:30px;
     input{
+        border: 2px solid #f0f0f0;
+	    display: block;
+
         width:250px;
         height: 30px;
         padding: 10px;
@@ -135,3 +138,55 @@
         border-radius: 18px;
     }
 }
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+}
+
+#clearAllBtn {
+    margin-top: 20px;
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+
+.table-sect{
+    margin-top: 70px;
+    .select-inp{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.name-email{
+    .success{
+        input {
+            border-color: #09c372;
+}}
+}
+
+.name-email{
+    .error{
+        input {
+            border-color: #ff3860;
+}}
+}
+
+.name-email {
+    .error {
+    color: #ff3860;
+    font-size: 9px;
+    height: 13px;
+}}

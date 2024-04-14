@@ -3,3 +3,9 @@
     justify-content: $justify;
     align-items: $align;
 }
+
+@mixin lg {
+    @media only screen and (max-width: 992px) {
+        @content;
+    }
+}

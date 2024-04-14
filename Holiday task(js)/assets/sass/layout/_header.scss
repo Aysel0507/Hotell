@@ -17,14 +17,15 @@ header{
     }
 }
 
+
+
 nav{
     ul{
         @include display-flex(center,center);
         gap:30px;
-
-        // @include lg{
-        //     display: none;
-        // }
+        @include lg{
+            display: none;
+        }
         li{
             a{
             color: $primary-color;
@@ -44,6 +45,9 @@ nav{
         display: flex;
         gap:12px;
         color: $primary-color;
+        .bar-icon{
+            display: none;
+        }
         .phone{
             // width: 30px;
             // height: 30px;
@@ -52,5 +56,5 @@ nav{
             text-align: center;
         }
     }
-    
 }
+

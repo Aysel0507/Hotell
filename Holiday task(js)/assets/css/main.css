@@ -175,6 +175,11 @@ nav ul {
   align-items: center;
   gap: 30px;
 }
+@media only screen and (max-width: 992px) {
+  nav ul {
+    display: none;
+  }
+}
 nav ul li a {
   color: white;
   font-size: 14px;
@@ -188,6 +193,9 @@ nav ul li a:hover {
   display: flex;
   gap: 12px;
   color: white;
+}
+.social_icons a .bar-icon {
+  display: none;
 }
 .social_icons a .phone {
   border-radius: 50%;
@@ -339,6 +347,220 @@ ul li:hover {
   margin-bottom: 18px;
 }
 
+.our_services {
+  margin-top: 120px;
+}
+.our_services h1 {
+  font-size: 22px;
+  font-weight: 800;
+  color: #00917c;
+  line-height: 6;
+  font-family: "Work Sans";
+}
+
+.prevBtn button {
+  width: 60px;
+  padding: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
+  transition: 0.4s;
+  margin-top: 50px;
+  cursor: pointer;
+}
+.prevBtn button:hover {
+  border-color: #000;
+}
+
+.nextBtn button {
+  width: 60px;
+  padding: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
+  transition: 0.4s;
+  margin-top: 50px;
+  cursor: pointer;
+}
+.nextBtn button:hover {
+  border-color: #000;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.cards .card {
+  width: 300px;
+  height: 180px;
+  border: 1px solid red;
+  box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.05);
+  padding: 50px 50px 100px 50px;
+  border: none;
+}
+.cards .card h2 {
+  font-size: 17px;
+  font-weight: 600;
+  color: #222222;
+  font-family: "Work Sans";
+  margin-bottom: 0.5rem;
+}
+.cards .card p {
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.5);
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+.cards .card a {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  color: #888;
+  line-height: 10;
+}
+
+.cards {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cards .card-blog {
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.cards .card-blog span {
+  position: absolute;
+  left: 35px;
+  bottom: 132px;
+  padding: 4px;
+  border-radius: 50%;
+  background-color: #00917c;
+  color: white;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.cards .card-blog span i {
+  padding: 10px;
+}
+.cards .card-blog img {
+  width: 100%;
+  cursor: pointer;
+}
+.cards .card-blog h2 {
+  font-size: 18px;
+  color: black;
+  padding-left: 18px;
+  margin-top: 20px;
+  line-height: 1.5;
+  font-weight: 700;
+}
+.cards .card-blog a {
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  color: #888;
+  padding-left: 18px;
+  line-height: 5;
+  transition: 0.4s;
+}
+.cards .card-blog a:hover {
+  color: black;
+}
+
+.blog_posts {
+  margin-top: 150px;
+}
+.blog_posts h2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #00917c;
+}
+
+.testimonials {
+  margin-top: 150px;
+  margin-bottom: 250px;
+}
+.testimonials .btns {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+}
+.testimonials .btns .prevBtn button {
+  padding: 7px 20px;
+  cursor: pointer;
+  border-radius: 30px;
+  transition: 0.4s;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+.testimonials .btns .prevBtn button:hover {
+  border: 1px solid black;
+}
+.testimonials .btns .nextBtn button {
+  padding: 7px 20px;
+  cursor: pointer;
+  border-radius: 30px;
+  transition: 0.4s;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+.testimonials .btns .nextBtn button:hover {
+  border: 1px solid black;
+}
+.testimonials .test {
+  display: flex;
+  gap: 80px;
+}
+.testimonials .test span {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.5);
+  font-family: "Work Sans";
+}
+.testimonials .test h2 {
+  color: #00917c;
+  font-size: 32px;
+  font-family: "Work Sans";
+  font-weight: 700;
+}
+
+.cards .card-test {
+  position: relative;
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.cards .card-test p {
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.5);
+  padding-left: 18px;
+  margin-top: 20px;
+  line-height: 1.5;
+  font-weight: 700;
+}
+.cards .card-test span {
+  position: absolute;
+}
+.cards .card-test .director {
+  display: flex;
+}
+.cards .card-test .director h3 {
+  padding-left: 20px;
+  padding-top: 6px;
+}
+.cards .card-test .director span {
+  padding-left: 90px;
+  padding-top: 40px;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 15px;
+  font-weight: 500;
+}
+.cards .card-test .director img {
+  padding-top: 10px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  padding-left: 10px;
+}
+
 .bcg-img2 {
   background-image: url(https://preview.colorlib.com/theme/hotell/images/img_3.jpg);
   width: 100%;
@@ -389,6 +611,60 @@ ul li:hover {
   font-size: 15px;
   font-weight: 700;
   color: white;
+}
+
+.who_we_are {
+  margin-top: 150px;
+  margin-bottom: 100px;
+}
+.who_we_are .cards .card-who {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 10px;
+}
+.who_we_are .cards .card-who p {
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.5);
+}
+.who_we_are .cards .card-who img {
+  border-radius: 50%;
+  width: 130px;
+  height: 130px;
+}
+.who_we_are .cards .card-who h3 {
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Work Sans";
+}
+.who_we_are .cards .card-who span {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 14px;
+}
+.who_we_are .cards .card-who a {
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: 700;
+  line-height: 10;
+  transition: 0.4s;
+}
+.who_we_are .cards .card-who a:hover {
+  color: black;
+}
+.who_we_are .who-we {
+  display: flex;
+  gap: 200px;
+}
+.who_we_are .who-we span {
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.5);
+  max-width: 500px;
+  font-family: "Work Sans";
+}
+.who_we_are h2 {
+  font-size: 26px;
+  font-weight: 800;
+  font-family: "Work Sans";
+  color: #00917c;
 }
 
 .bcg-img4 {
@@ -483,6 +759,8 @@ ul li:hover {
   gap: 30px;
 }
 .name-email input {
+  border: 2px solid #f0f0f0;
+  display: block;
   width: 250px;
   height: 30px;
   padding: 10px;
@@ -527,4 +805,49 @@ ul li:hover {
   padding: 14px;
   margin-top: 25px;
   border-radius: 18px;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 8px;
+}
+
+#clearAllBtn {
+  margin-top: 20px;
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.table-sect {
+  margin-top: 70px;
+}
+.table-sect .select-inp {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.name-email .success input {
+  border-color: #09c372;
+}
+
+.name-email .error input {
+  border-color: #ff3860;
+}
+
+.name-email .error {
+  color: #ff3860;
+  font-size: 9px;
+  height: 13px;
 }/*# sourceMappingURL=main.css.map */

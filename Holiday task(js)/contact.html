@@ -54,6 +54,7 @@
         </div>
     </section>
 
+     
     <section class="get_in_touch">
         <div class="container">
             <div class="row_touch">
@@ -65,28 +66,32 @@
                     language ocean.</p>
                 </div>
 
-                <div class="form-input">
+                <form class="form-input">
                     <div class="name-email">
                         <div class="div">
                         <label for="name">Name</label> <br>
-                        <input type="text" id="name"> 
+                        <input id="name" type="text" id="name" required> 
+                        <div class="error"></div>
                     </div>
 
                     <div class="div">
                         <label for="email">Email</label>  <br>
-                        <input type="email"  id="email"> 
+                        <input id="email" type="email"  id="email" required> 
+                        <div class="error"></div>
                     </div>
                     </div>
 
                     <div class="textarea">
                         <label for="message">Message</label> <br>
-                        <textarea id="textarea" cols="72" rows="15"></textarea>
+                        <textarea id="textarea" cols="72" rows="15" required></textarea>
+                        <div class="error"></div>
                     </div>
 
                     <div class="send-message">
                         <input type="submit" value="Send Message">
+                        <div class="error"></div>
                     </div>
-                </div>
+                </form>
 
                 
             </div>
@@ -126,11 +131,33 @@
 
 
 
-
         </div>
-          
         </div>
+    </section>
 
+    <section class="table-sect">
+        <div class="select-inp">
+            <input type="text" id="searchInput" placeholder="Search by Full Name...">
+            <select id="sortSelect">
+                <option value="asc">Sort by Name (A-Z)</option>
+                <option value="desc">Sort by Name (Z-A)</option>
+            </select>
+        </div>
+        
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Full Name</th>
+          <th>Email</th>
+          <th>Message</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody id="customersTable">
+
+      </tbody>
+    </table>
+    <button id="clearAllBtn">Clear All</button>
     </section>
 
 
@@ -206,7 +233,8 @@
             </div>
         </div>
     </footer>
-
+    <script src="./assets/js/form.js"></script>
+    <script src="./assets/js/navbar.js"></script>
 </body>
 
 </html>
